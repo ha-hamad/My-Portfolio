@@ -14,9 +14,9 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     <div className="p-6 rounded-xl border border-white/10 hover:bg-blue-500/20 hover:-translate-y-1 hover:border-purple-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all">
-                        <h3 className="text-xl font-bold mb-2">Journaling App (Under development/Collaboration)</h3>
+                        <h3 className="text-xl font-bold mb-2">S2S Model (Under development/Collaboration)</h3>
                         <p className="text-gray-400 mb-4">
-                            A cutting-edge journaling app powered by a speech-to-speech AI, 
+                            A cutting-edge speech-to-speech AI, 
                             designed for seamless everyday use. It not only records and 
                             organizes your thoughts but also intelligently tracks themes, 
                             emotions, and patterns in your entries. With an interactive AI 
