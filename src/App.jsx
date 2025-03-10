@@ -16,13 +16,13 @@ function App() {
   return (
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div 
-        className={`min-h-screen transition-opacity duration-700 ${
+        className={`main-content min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100`} 
+        } bg-black text-gray-100 ${menuOpen ? 'blur-background' : ''}`} 
       >
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
         <Projects />
@@ -32,4 +32,4 @@ function App() {
   ); 
 }
 
-export default App
+export default App;
