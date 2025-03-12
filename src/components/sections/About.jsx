@@ -20,11 +20,51 @@ export const About = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center"> 
-                        About Me
-                    </h2>
+                    <div className="text-center mb-8">
+                        <style>
+                            {`
+                                .animated-gradient-text {
+                                    background: linear-gradient(to right, #0066ff, #00ffff);
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    color: transparent;
+                                    background-size: 100% auto;
+                                    animation: none;
+                                }
 
-                    <div className="rounded-xl p-8 border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all">
+                                @keyframes gradient {
+                                    0% { background-position: 0% 50%; }
+                                    50% { background-position: 100% 50%; }
+                                    100% { background-position: 0% 50%; }
+                                }
+
+                                .anime-line {
+                                    height: 4px;
+                                    background: linear-gradient(to right,rgb(0, 62, 155),rgb(143, 255, 255),rgb(0, 62, 155));
+                                    background-size: 200% auto;
+                                    animation: gradient 5s ease-in-out infinite;
+                                    margin-top: 6px;
+                                    width: 40%;
+                                }
+
+                                .box {
+                                    box-shadow: 0 4px 20px rgba(134, 132, 132, 0.2); /* 3D effect */
+                                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                                }
+
+                                .box:hover {
+                                    transform: translateY(-4px); /* Lift effect on hover */
+                                    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+                                }
+                            `}
+                        </style>
+                        <h2 className="text-4xl font-bold mb-4 animated-gradient-text">
+                            About Me
+                        </h2>
+                        <div className="anime-line" style={{ margin: '0 auto' }}></div>
+                    </div>
+
+                    <div className="rounded-xl p-8 border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all box">
                         <p className="text-gray-300 mb-6">
                             Versatile and adaptive, excelling across disciplines with a rare blend 
                             of curiosity, precision, and ingenuity. Always ready to offer support, 
@@ -32,7 +72,7 @@ export const About = () => {
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all box">
                                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {frontendSkills.map((tech, key) => (
@@ -43,7 +83,7 @@ export const About = () => {
                                 </div>
                             </div>
 
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all box">
                                 <h3 className="text-xl font-bold mb-4"> Backend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {backendSkills.map((tech, key) => (
@@ -57,7 +97,7 @@ export const About = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                                <div className="p-6 rounded-xl border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all">
+                                <div className="p-6 rounded-xl border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all box">
                                     <h3 className="text-xl font-bold mb-4">🎓 Education</h3>
                                     <ul className="list-disc list-inside text-gray-300 space-y-2">
                                         <li>
@@ -72,7 +112,7 @@ export const About = () => {
                                     </ul>
 
                                 </div>
-                                <div className="p-6 rounded-xl border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all">
+                                <div className="p-6 rounded-xl border-white/10 border hover:border-blue-400 hover:bg-blue-500/20 hover:-translate-y-1 transition-all box">
                                     <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
                                     <div className="space-y-4 text-gray-300">
                                         <div>

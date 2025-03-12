@@ -26,7 +26,46 @@ export const Contact = () => {
         >
             <RevealOnScroll>
                 <div className='px-4 w-full md:w-150'>
-                    <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center'> Get In Touch</h2>
+                    <div className="text-center mb-8">
+                        <style>
+                            {`
+                                .animated-gradient-text-contact {
+                                    background: linear-gradient(to right, #0066ff, #00ffff);
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    color: transparent;
+                                    background-size: 300% auto;
+                                    animation: gradient 2s ease-in-out infinite;
+                                }
+
+                                @keyframes gradient {
+                                    0% { background-position: 0% 50%; }
+                                    50% { background-position: 100% 50%; }
+                                    100% { background-position: 0% 50%; }
+                                }
+
+                                .gradient-button {
+                                    background: linear-gradient(to right, #0066ff, #00ffff);
+                                    background-size: 200% auto;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 5px;
+                                    padding: 12px 24px;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    transition: transform 0.3s ease;
+                                    animation: gradient 2s ease-in-out infinite;
+                                }
+
+                                .gradient-button:hover {
+                                    transform: translateY(-2px);
+                                }
+                            `}
+                        </style>
+                        <h2 className="text-4xl font-bold mb-4 animated-gradient-text-contact">
+                            Get In Touch
+                        </h2>
+                    </div>
                     <form className='space-y-6' onSubmit={handleSubmit}>
                         <div className='relative'>
                             <input 
@@ -66,7 +105,7 @@ export const Contact = () => {
                             />
                         </div>
 
-                        <button type="submit" className='w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]'>
+                        <button type="submit" className='w-full gradient-button'>
                             Send Message
                         </button>
                     </form>
