@@ -145,7 +145,7 @@ export const Projects = () => {
                                 href="#" 
                                 className="text-blue-400 hover:text-blue-300 transition-colors my-4 px-4 py-2 rounded-lg border border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/10 transition-all"
                             > 
-                                → Please don't Click Here to View Project ←
+                                → Nothing yet ←
                             </a>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ export const Projects = () => {
                                 href="#" 
                                 className="text-blue-400 hover:text-blue-300 transition-colors my-4 px-4 py-2 rounded-lg border border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/10 transition-all"
                             > 
-                                → I swear bro if you Click Here to View Project ←
+                                → Nothing yet ←
                             </a>
                         </div>
                     </div>
