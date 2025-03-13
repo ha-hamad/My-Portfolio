@@ -35,7 +35,6 @@ export const Home = () => {
                     ability to adapt and excel across various domains. 
                     </p>
 
-
                     <div className="flex justify-center space-x-4">
                         <a 
                             href="#projects" 
