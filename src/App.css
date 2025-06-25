@@ -1,0 +1,28 @@
+.animated-background {
+    min-height: 100vh;
+    background: linear-gradient(
+      120deg,
+      #000000 0%,
+      #000000 30%,
+      #121212 50%,
+      #000000 70%,
+      #000000 100%
+    );
+    background-size: 300% 300%;
+    animation: subtle-shimmer 25s ease-in-out infinite;
+  }
+  
+  
+  @keyframes subtle-shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  

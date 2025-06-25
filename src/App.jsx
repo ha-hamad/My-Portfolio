@@ -19,9 +19,9 @@ function App() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div 
-        className={`main-content min-h-screen transition-opacity duration-700 ${
+        className={`main-content animated-background min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100 ${menuOpen ? 'blur-background' : ''}`} 
+        } text-gray-100 ${menuOpen ? 'blur-background' : ''}`} 
       >
         <Home />
         <About />
